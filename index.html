@@ -5,29 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
-        <a href="page/images.html">Image Search</a>
-        <a href="page/advanced.html">Advanced Search</a>
-    </header>
+    <div class="container">
+        <header>
+            <a href="page/images.html">Image Search</a>
+            <a href="page/advanced.html">Advanced Search</a>
+        </header>
 
-    <div>
-        <form action="https://google.com/search">
-            <input type="text" name="q" required>
+        <main>
+            <form action="https://google.com/search">
+                <input type="text" name="q" id="search" required>
+                <div class="buttonsContainer">
+                    <input type="submit" value="Google Search" id="searchBtn">
+                    <input type="submit" value="I'm Feeling Lucky" id="luckyBtn">
+                </div>
+            </form>
+        </main>
 
-            <input type="submit" value="Google Search">
-            <input type="submit" value="I'm Feeling Lucky">
-        </form>
+        <footer>
+            Implemented by:
+            <a href="https://github.com/ibrahimelmokhtar" target="_blank">Ibrahim El-Mokhtar</a>
+            as part of
+            <a href="https://cs50.harvard.edu/web" target="_blank">CS50’s Web Programming with Python and JavaScript</a>
+        </footer>
     </div>
-
-    <footer>
-        Implemented by:
-        <a href="https://github.com/ibrahimelmokhtar" target="_blank">Ibrahim El-Mokhtar</a>
-        as part of
-        <a href="https://cs50.harvard.edu/web" target="_blank">CS50’s Web Programming with Python and JavaScript</a>
-    </footer>
 </body>
 
 </html>

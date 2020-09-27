@@ -1,0 +1,96 @@
+$baseMargin: 15px;
+$buttonMargin: 10px;
+
+.container {
+    margin: $baseMargin;
+    // background-color: antiquewhite;
+    display: grid;
+    height: 96vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.1fr 4fr 0.1fr;
+
+    grid-template-areas:
+        "hd hd hd hd"
+        ". main main ."
+        "ft ft ft ft";
+}
+
+header {
+    // background-color: chocolate;
+    grid-area: hd;
+    text-align: right;
+
+    a {
+        margin-left: $baseMargin;
+    }
+}
+
+main {
+    // background-color: cadetblue;
+    grid-area: main;
+
+    form {
+        // background-color: aqua;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #search {
+        width: 85%;
+        height: 40px;
+        border-radius: 40px;
+        border-style: groove;
+        padding: 0px 20px;
+    }
+
+    .buttonsContainer {
+        display: flex;
+        flex-direction: row;
+        // background-color: brown;
+        width: auto;
+        margin-top: 2*$baseMargin;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+
+        #searchBtn,
+        #luckyBtn {
+            font-size: large;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: $buttonMargin;
+        }
+
+        #searchBtn {
+            margin-right: $buttonMargin;
+        }
+    }
+}
+
+footer {
+    // background-color: aquamarine;
+    grid-area: ft;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#searchBtn:hover,
+#luckyBtn:hover {
+    cursor: pointer;
+    background-color: beige;
+}
