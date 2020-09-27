@@ -67,4 +67,10 @@ main #divBtn input[type="submit"] {
   color: white;
   padding: 5px;
 }
+
+main #divBtn input[type="submit"]:hover {
+  background-color: beige;
+  color: black;
+  cursor: pointer;
+}
 /*# sourceMappingURL=style-adv.css.map */
