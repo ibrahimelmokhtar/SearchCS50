@@ -1,0 +1,63 @@
+$baseMargin: 15px;
+$buttonMargin: 10px;
+
+.container {
+    margin: $baseMargin;
+    // background-color: antiquewhite;
+    display: grid;
+    height: 93vh;
+
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    font-size: large;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.1fr 4fr;
+
+    grid-template-areas:
+        "hd hd"
+        "main main"
+}
+
+main {
+    form {
+        justify-content: flex-start;
+        align-items: baseline;
+    }
+
+    #first {
+        margin-top: 20px;
+    }
+
+    div {
+        margin-bottom: 20px;
+        // background-color: aliceblue;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    input[type="text"] {
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 20px;
+        width: 30%;
+        border-radius: 5px;
+    }
+
+    #divBtn {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        input[type="submit"] {
+            font-size: larger;
+            background-color: rgb(57, 57, 255);
+            color: white;
+            padding: 5px;
+        }
+    }
+}
