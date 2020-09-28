@@ -71,6 +71,10 @@ main {
         #searchBtn {
             margin-right: $buttonMargin;
         }
+
+        #luckyBtn {
+            display: none;
+        }
     }
 }
 
